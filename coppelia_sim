@@ -1,0 +1,8 @@
+#!/bin/bash
+# wrapper to launch Coppelia Sim from a ROS launch file
+
+# change this line if needed
+export COPPELIASIM_ROOT_DIR=/opt/coppeliaSim
+
+cd $COPPELIASIM_ROOT_DIR
+./coppeliaSim.sh "$1"

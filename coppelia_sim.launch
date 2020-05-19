@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Launch Coppelia Sim and roscore if needed -->
+    <arg name="scene" default=""/>
+    <node name="coppelia_sim" pkg="coppeliasim_ros_launcher" type="coppelia_sim" respawn="false" output="screen" args="$(arg scene)"/>   
+</launch>
